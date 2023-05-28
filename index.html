@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/styles.css"/>
     <title>Resume</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/index.js"></script>
 </head>
 <body>
 <!--Main-->
@@ -27,93 +28,484 @@
             <h2 class="about-position">Java software engineer</h2>
             <h1 class="about-name">Dmytro Shubchynskyi</h1>
             <p class="about-description">
-                I am looking for a Java Software Engineer position to gain real business experience in a company and professional development opportunities while paying close attention to details.
-                Willing to learn new technologies and stacks, grow and be part of a team, I want to work on interesting projects where I can learn new things and develop myself.
+                I am looking for a Java Software Engineer position to gain real business experience in a company and
+                professional development opportunities while paying close attention to details.
+                Willing to learn new technologies and stacks, grow and be part of a team, I want to work on interesting
+                projects where I can learn new things and develop myself.
             </p>
         </div>
+
 
         <!--Projects-->
         <div class="projects">
             <h3 class="title">Learning projects</h3>
             <ol class="projects-list">
+
+                <!-- Проект 9: Quests web app (in progress) -->
                 <li class="projects-item">
-                    <span class="project">
-                <a href="https://github.com/Shubchynskyi/Quest_project"
-                   class="project-link"
-                   target="_blank"
-                >Quests web app (in progress)</a>
-                    <span class="project-bracket">[</span> Java servlets, JSP, JSTL
-                    <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn9"><span class="project">Quests web app (in progress)<span
+                            class="project-bracket"> [</span> From servlets to spring (technologies in the description)
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal9" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ol>
+                                <!-- Quests - Spring boot, JPA -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text">Web application for creating and passing text quests</span>
+                                                <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Mandatory conditions - the use of Java servlets and JSP.
+                                            </p>
+                                            <ul>
+                                                Realized:
+                                                <li>creating and editing users</li>
+                                                <li>user roles</li>
+                                                <li>creating a quest from a text template</li>
+                                                <li>editing the quest after creation</li>
+                                            </ul>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Java servlets, JSP, JSTL</li>
+                                                <li>HTML (using Bootstrap forms)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/Quest_project"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Quests - Spring core / hibernate / BPP / Aspect -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text">Web application for creating and passing text quests</span>
+                                                <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Mandatory conditions - the use of Java servlets and JSP.
+                                            </p>
+                                            <ul>
+                                                Realized:
+                                                <li>creating and editing users</li>
+                                                <li>user roles</li>
+                                                <li>creating a quest from a text template</li>
+                                                <li>editing the quest after creation</li>
+                                            </ul>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Java servlets, JSP, JSTL</li>
+                                                <li>HTML (using Bootstrap forms)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/Quest_project"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Quests - memory -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text">Web application for creating and passing text quests</span>
+                                                <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Mandatory conditions - the use of Java servlets and JSP.
+                                            </p>
+                                            <ul>
+                                                Realized:
+                                                <li>creating and editing users</li>
+                                                <li>user roles</li>
+                                                <li>creating a quest from a text template</li>
+                                                <li>editing the quest after creation</li>
+                                                <li>database in memory (HashMap)</li>
+                                            </ul>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Java servlets, JSP, JSTL</li>
+                                                <li>HTML (using Bootstrap forms)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/Quest_project/tree/work_with_memory_db-final"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </li>
+
+                <!-- Проект 8: Hibernate study projects -->
                 <li class="projects-item">
-                    <span class="project">
-                <a href="https://github.com/Shubchynskyi/project-servlet"
-                   class="project-link"
-                   target="_blank"
-                >Java servlets mini-project</a>
-                    <span class="project-bracket">[</span> Java servlets, JSP
-                    <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn8"><span class="project">Hibernate study projects<span
+                            class="project-bracket"> [</span> Docker, Redis, Hibernate, MySQL
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal8" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ol>
+                                <!-- project hibernate final -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text">Hibernate study project final</span>
+                                                <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Task: write a java program to transfer data from a SQL database to Redis. Entity mapping. Query optimization
+                                            </p>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Hibernate</li>
+                                                <li>Docker (Redis, MySQL)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/Hibernate_final_project"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- project hibernate 2 -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text">Hibernate study project 2</span>
+                                                <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Task: map the entity to existing tables, and add minimal functionality to check that the mapping is done correctly
+                                            </p>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Hibernate</li>
+                                                <li>Docker (MySQL)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/project-hibernate-2"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- project hibernate 1 -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text">Hibernate study project 1</span>
+                                                <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Task: implementing a repository layer using Hibernate
+                                            </p>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Hibernate</li>
+                                                <li>Docker (MySQL)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/project-hibernate-1"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </li>
+
+                <!-- Проект 7: Java servlets mini-project -->
                 <li class="projects-item">
-                    <span class="project">
-                <a href="https://github.com/Shubchynskyi/project-front"
-                   class="project-link"
-                   target="_blank"
-                >Frontend mini-project</a>
-                    <span class="project-bracket">[</span> HTML, CSS, JavaScript
-                    <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn7">
+                <span class="project">Java servlets project
+                    <span class="project-bracket"> [</span> Java servlets, JSP <span class="project-bracket">]</span>
+                </span>
+                    </button>
+                    <div id="myModal7" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        Java servlets project
+                                        <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Task: need to make tic-tac-toe game using servlets and jsp
+                                    </p>
+                                    <ul>
+                                        Realized:
+                                        <li>complex logic (4 difficulty levels)</li>
+                                        <li>sign selection (cross or zero, cross always starts first)</li>
+                                    </ul>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>Java servlets, JSP, JSTL</li>
+                                        <li>HTML, CSS, JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/project-servlet"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
+
+                <!-- Проект 6: Frontend mini-project -->
                 <li class="projects-item">
-                    <span class="project">
-                <a href="https://github.com/Shubchynskyi/hippodrome"
-                   class="project-link"
-                   target="_blank"
-                >Testing and logging mini-project</a>
-                    <span class="project-bracket">[</span> Log4j, JUnit, Mockito
-                    <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn6"><span class="project">Frontend mini-project<span
+                            class="project-bracket"> [</span> HTML, CSS, JavaScript
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal6" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        Frontend mini-project
+                                        <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Task: need to make a UI for the CRUD backend using HTML, CSS, JS.<br>
+                                        We will make an admin panel for managing online game accounts.
+                                    </p>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>HTML, CSS, JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/project-front"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
+
+                <!-- Проект 5: Testing and logging mini-project -->
                 <li class="projects-item">
-                    <span class="project">
-                <a href="https://github.com/Shubchynskyi/project-maven"
-                   class="project-link"
-                   target="_blank"
-                >Maven mini-project</a>
-                    <span class="project-bracket">[</span> Maven
-                    <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn5"><span class="project">Testing and logging mini-project<span
+                            class="project-bracket"> [</span> Log4j, JUnit, Mockito
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        Testing and logging mini-project
+                                        <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Task: add testing and logging
+                                    </p>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>Log4j, JUnit, Mockito</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/hippodrome"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
+
+                <!-- Проект 4: Maven mini-project -->
                 <li class="projects-item">
-                    <span class="project">
-                <a href="https://github.com/Shubchynskyi/resume"
-                   class="project-link"
-                   target="_blank"
-                >Resume</a>
-                    <span class="project-bracket">[</span> HTML, CSS
-                    <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn4"><span class="project">Maven mini-project<span
+                            class="project-bracket"> [</span> Maven
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        Maven mini-project
+                                        <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Task: need to make an executable JAR file with a JavaFX game through the
+                                        graphics engine from JavaRush.<br>
+                                        The task involves only working with Maven.
+                                    </p>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>Maven</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/project-maven"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
+
+                <!-- Проект 3: Resume) -->
                 <li class="projects-item">
-                    <span class="project">
-                <a href="https://github.com/Shubchynskyi/IslandLima"
-                   class="project-link"
-                   target="_blank"
-                >Life Simulator</a>
-                    <span class="project-bracket">[</span> Java Core, Multithreading, Stream, Reflection
-                    <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn3"><span class="project">Resume<span
+                            class="project-bracket"> [</span> HTML, CSS, JavaScript
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        My resume
+                                    </p>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>HTML, CSS, JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/resume"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
+
+                <!-- Проект 2: Island life simulator  -->
                 <li class="projects-item">
-              <span class="project">
-                <a href="https://github.com/Shubchynskyi/CryptoAnalyser"
-                   class="project-link"
-                   target="_blank">Crypto Analyzer</a>
-                <span class="project-bracket">[</span> Java, Swing
-                <span class="project-bracket">]</span>
-              </span>
+                    <button id="myBtn2"><span class="project">Island life simulator<span
+                            class="project-bracket"> [</span> Java Core, Multithreading, Stream, Reflection
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        Simulation of life on the island (animals and plants) Console version
+                                        <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Mandatory conditions - the use of OOP and multithreading
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Task: to program an island model with variable parameters, consisting of an
+                                        array of locations. Locations will be filled with vegetation and animals.
+                                        Animals can: eat plants and/or other animals (if their location has suitable
+                                        food), move (to neighboring locations), breed (if there is a couple in their
+                                        location), to die of hunger or be eaten.
+                                    </p>
+                                    <ul>
+                                        Realized:
+                                        <li>creating and editing users</li>
+                                        <li>user roles</li>
+                                        <li>creating a quest from a text template</li>
+                                        <li>editing the quest after creation</li>
+                                    </ul>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>Java Core, Multithreading</li>
+                                        <li>Stream, Reflection</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/IslandLima"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Проект 1: Crypto Analyzer -->
+                <li class="projects-item">
+                    <button id="myBtn1"><span class="project">Crypto Analyzer<span
+                            class="project-bracket"> [</span> Java, Swing
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        Crypto-analyzer using a Caesar cipher.
+                                        <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Task: the program can encrypt text by key, decrypt text by key, decrypt text by
+                                        brute force, decrypt text using statistical analysis and manual character
+                                        substitution. There is a console version and a swing version.
+                                    </p>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>Java, Swing</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/CryptoAnalyser"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
             </ol>
         </div>
@@ -331,6 +723,8 @@
         </div>
     </aside>
 </div>
+
+<script src="js/index.js"></script>
 
 </body>
 </html>

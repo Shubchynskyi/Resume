@@ -257,4 +257,106 @@ body {
 }
 
 
+/*for modal window*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  font-family: Arial, sans-serif; /* шрифт, как в блоке .about-description */
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #F0F0F0; /* цвет фона, как в основном файле */
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+.projects-item-modal {
+  font-weight: 400;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стили для кнопки всплывающего окна */
+button {
+  font-family: Arial, sans-serif; /* шрифт, как в основном документе */
+  color: #333; /* цвет текста, как в основном документе */
+  background-color: #FFFFFF; /* фон кнопки, выберите в соответствии с общим стилем страницы */
+  border: none; /* убрать рамку вокруг кнопки */
+  /*padding: 0px 0px; !* отступы внутри кнопки (верх/низ и лево/право соответственно) *!*/
+  text-align: center; /* выравнивание текста по центру */
+  text-decoration: none; /* убрать подчеркивание */
+  display: inline-block;
+  font-size: 16px; /* размер шрифта */
+  margin: 4px 2px;
+  cursor: pointer; /* изменить курсор при наведении на кнопку */
+}
+
+/*button#myBtn {*/
+/*  font-size: 14px; !* Устанавливает размер шрифта кнопки *!*/
+/*  padding: 5px 10px; !* Устанавливает внутренний отступ кнопки: верх и низ - 5px, лево и право - 10px *!*/
+/*  margin-bottom: 10px; !* Устанавливает нижний внешний отступ кнопки *!*/
+/*  !* Вы можете изменить эти значения в соответствии с вашими предпочтениями *!*/
+/*}*/
+
+
+
+.project-detail {
+  font-size: 0.9em; /* 90% of the current font size */
+  font-style: italic;
+}
+
+.projects-item-modal {
+  margin-bottom: 10px; /* Установка отступа снизу для каждого блока li с классом 'projects-item-modal' */
+}
+
+.spacer {
+  margin-top: 10px; /* Установка отступа сверху для элемента с классом 'spacer' */
+}
+
+.in-modal-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  width: 90%;
+  list-style-type: circle;
+}
+
+ul li:first-child {
+  margin-top: 0;
+}
+
+.bold-italic-text {
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
 
