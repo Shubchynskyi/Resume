@@ -28,10 +28,14 @@
             <h2 class="about-position">Java software engineer</h2>
             <h1 class="about-name">Dmytro Shubchynskyi</h1>
             <p class="about-description">
-                I am looking for a Java Software Engineer position to gain real business experience in a company and
-                professional development opportunities while paying close attention to details.
-                Willing to learn new technologies and stacks, grow and be part of a team, I want to work on interesting
-                projects where I can learn new things and develop myself.
+                <!--                I am looking for a Java Software Engineer position to gain real business experience in a company and-->
+                <!--                professional development opportunities while paying close attention to details.-->
+                <!--                Willing to learn new technologies and stacks, grow and be part of a team, I want to work on interesting-->
+                <!--                projects where I can learn new things and develop myself.-->
+                I'm looking for a Java Software Engineer role where I can use my skills and commitment.
+                I'm excited to work on tough projects, learn new tech, and grow my skill set.
+                I hope to join a company that values professional growth and
+                where my careful attention to detail can make a real difference.
             </p>
         </div>
 
@@ -41,10 +45,10 @@
             <h3 class="title">Learning projects</h3>
             <ol class="projects-list">
 
-                <!-- Проект 9: Quests web app (in progress) -->
+                <!-- Project 9: Quests web app (in progress) -->
                 <li class="projects-item">
                     <button id="myBtn9"><span class="project">Quests web app (in progress)<span
-                            class="project-bracket"> [</span> From servlets to spring (technologies in the description)
+                            class="project-bracket"> [</span> from servlets to spring (technologies in the description)
                 <span class="project-bracket">]</span></span></button>
                     <div id="myModal9" class="modal">
                         <div class="modal-content">
@@ -93,12 +97,15 @@
                 <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
                                             </p>
                                             <p class="in-modal-description">
-                                                Mandatory conditions - use Spring Core, Hibernate, Spring AOP or/and BPP for Transactional
+                                                Mandatory conditions - use Spring Core, Hibernate, Spring AOP or/and BPP
+                                                for Transactional
                                             </p>
                                             <ul>
                                                 Realized:
                                                 <li>database postgresql via docker</li>
-                                                <li>Transactional annotation is processed using a written bean-postprocessor and/or using aspects</li>
+                                                <li>Transactional annotation is processed using a written
+                                                    bean-postprocessor and/or using aspects
+                                                </li>
                                                 <li>creating and editing users</li>
                                                 <li>user roles</li>
                                                 <li>creating a quest from a text template</li>
@@ -160,12 +167,82 @@
                     </div>
                 </li>
 
-                <!-- Проект 8: Hibernate study projects -->
+                <!-- Project 8: To-do list -->
                 <li class="projects-item">
-                    <button id="myBtn8"><span class="project">Hibernate study projects<span
-                            class="project-bracket"> [</span> Docker, Redis, Hibernate, MySQL
-                <span class="project-bracket">]</span></span></button>
+                    <button id="myBtn8"><span class="project">Todo list project<span
+                            class="project-bracket"> [</span> Spring Boot, Jpa, Thymeleaf, Docker Compose, Liquibase
+    <span class="project-bracket">]</span></span></button>
                     <div id="myModal8" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        Todo list project
+                                        <br><span class="project-detail">As part of an educational project at
+    <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Task: make ToDo web application using Spring Boot<br>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Mandatory conditions - use Docker Compose
+                                    </p>
+                                    <ul class="spacer">
+                                        Using technologies:
+                                        <li>Spring Boot, Jpa</li>
+                                        <li>Thymeleaf</li>
+                                        <li>Liquibase</li>
+                                        <li>Docker Compose</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/TodoList"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub link</a>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <button id="hiddenInstruction" class="project-link">
+                                        Script to download and run Docker-compose
+                                    </button>
+                                    <div id="instructions" style="display:none;">
+                                        <p>
+                                            <a href="files/todo-docker.sh" class="project-link" download>
+                                                Download Script</a>
+                                        </p>
+                                        <div class="in-modal-description">
+                                            Launch instructions
+                                            <ul class="in-modal-description">
+                                                <li>
+                                                    Open and run through Intellij IDEA
+                                                </li>
+                                                <li>
+                                                    Or run Bash/Command Prompt in the same directory as the script. <br>
+                                                    Do two commands: <br>
+                                                    1) chmod +x todo-docker.sh <br>
+                                                    2) ./todo-docker.sh <br>
+                                                    docker-compose.yaml will be downloaded and run which will run
+                                                    containers in docker with application and database.
+                                                </li>
+                                                <li>
+                                                    Go to http://localhost:8080 in a browser
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 7: Hibernate study projects -->
+                <li class="projects-item">
+                    <button id="myBtn7"><span class="project">Hibernate study projects<span
+                            class="project-bracket"> [</span> Hibernate, MySQL, Redis
+                <span class="project-bracket">]</span></span></button>
+                    <div id="myModal7" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <ol>
@@ -179,12 +256,13 @@
                 <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
                                             </p>
                                             <p class="in-modal-description">
-                                                Task: write a java program to transfer data from a SQL database to Redis. Entity mapping. Query optimization
+                                                Task: write a java program to transfer data from a SQL database to
+                                                Redis. Entity mapping. Query optimization
                                             </p>
                                             <ul class="spacer">
                                                 Using technologies:
                                                 <li>Hibernate</li>
-                                                <li>Docker (Redis, MySQL)</li>
+                                                <li>Redis & MySQL in Docker</li>
                                             </ul>
                                         </li>
                                         <li class="projects-item-modal">
@@ -205,12 +283,13 @@
                 <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
                                             </p>
                                             <p class="in-modal-description">
-                                                Task: map the entity to existing tables and add minimal functionality to check that the mapping is done correctly
+                                                Task: map the entity to existing tables and add minimal functionality to
+                                                check that the mapping is done correctly
                                             </p>
                                             <ul class="spacer">
                                                 Using technologies:
                                                 <li>Hibernate</li>
-                                                <li>Docker (MySQL)</li>
+                                                <li>MySQL in Docker</li>
                                             </ul>
                                         </li>
                                         <li class="projects-item-modal">
@@ -236,7 +315,7 @@
                                             <ul class="spacer">
                                                 Using technologies:
                                                 <li>Hibernate</li>
-                                                <li>Docker (MySQL)</li>
+                                                <li>MySQL in Docker</li>
                                             </ul>
                                         </li>
                                         <li class="projects-item-modal">
@@ -252,14 +331,14 @@
                     </div>
                 </li>
 
-                <!-- Проект 7: Java servlets mini-project -->
+                <!-- Project 6: Java servlets project Tic-Tac-Toe -->
                 <li class="projects-item">
-                    <button id="myBtn7">
-                <span class="project">Java servlets project
+                    <button id="myBtn6">
+                <span class="project">Java servlets project (Tic-Tac-Toe game)
                     <span class="project-bracket"> [</span> Java servlets, JSP <span class="project-bracket">]</span>
                 </span>
                     </button>
-                    <div id="myModal7" class="modal">
+                    <div id="myModal6" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <ul class="in-modal-description">
@@ -294,12 +373,12 @@
                     </div>
                 </li>
 
-                <!-- Проект 6: Frontend mini-project -->
+                <!-- Project 5: Frontend mini-project -->
                 <li class="projects-item">
-                    <button id="myBtn6"><span class="project">Frontend mini-project<span
+                    <button id="myBtn5"><span class="project">Frontend mini-project<span
                             class="project-bracket"> [</span> HTML, CSS, JavaScript
                 <span class="project-bracket">]</span></span></button>
-                    <div id="myModal6" class="modal">
+                    <div id="myModal5" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <ul class="in-modal-description">
@@ -329,77 +408,74 @@
                     </div>
                 </li>
 
-                <!-- Проект 5: Testing and logging mini-project -->
+                <!-- Project 4: Testing & logging & Maven mini-projects -->
                 <li class="projects-item">
-                    <button id="myBtn5"><span class="project">Testing and logging mini-project<span
-                            class="project-bracket"> [</span> Log4j, JUnit, Mockito
-                <span class="project-bracket">]</span></span></button>
-                    <div id="myModal5" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <ul class="in-modal-description">
-                                <li class="projects-item-modal">
-                                    <p class="in-modal-description">
-                                        Testing and logging mini-project
-                                        <br><span class="project-detail">As part of an educational project at
-                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
-                                    </p>
-                                    <p class="in-modal-description">
-                                        Task: add testing and logging
-                                    </p>
-                                    <ul class="spacer">
-                                        Using technologies:
-                                        <li>Log4j, JUnit, Mockito</li>
-                                    </ul>
-                                </li>
-                                <li class="projects-item-modal">
-                                    <a href="https://github.com/Shubchynskyi/hippodrome"
-                                       class="project-link"
-                                       target="_blank"
-                                    >GitHub link</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Проект 4: Maven mini-project -->
-                <li class="projects-item">
-                    <button id="myBtn4"><span class="project">Maven mini-project<span
-                            class="project-bracket"> [</span> Maven
-                <span class="project-bracket">]</span></span></button>
+                    <button id="myBtn4"><span class="project">Maven / Testing / logging mini-projects<span
+                            class="project-bracket"> [</span> Maven, Log4j, JUnit, Mockito <span
+                            class="project-bracket">]</span></span>
+                    </button>
                     <div id="myModal4" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                            <ul class="in-modal-description">
+                            <ol>
+                                <!-- Testing and logging mini-project -->
                                 <li class="projects-item-modal">
-                                    <p class="in-modal-description">
-                                        Maven mini-project
-                                        <br><span class="project-detail">As part of an educational project at
-                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
-                                    </p>
-                                    <p class="in-modal-description">
-                                        Task: need to make an executable JAR file with a JavaFX game through the
-                                        graphics engine from JavaRush.<br>
-                                        The task involves only working with Maven.
-                                    </p>
-                                    <ul class="spacer">
-                                        Using technologies:
-                                        <li>Maven</li>
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                Testing and logging mini-project
+                                                <br><span class="project-detail">As part of an educational project at
+            <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Task: add testing and logging
+                                            </p>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Log4j, JUnit, Mockito</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/hippodrome"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
                                     </ul>
                                 </li>
+                                <!-- Maven mini-project -->
                                 <li class="projects-item-modal">
-                                    <a href="https://github.com/Shubchynskyi/project-maven"
-                                       class="project-link"
-                                       target="_blank"
-                                    >GitHub link</a>
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                Maven mini-project
+                                                <br><span class="project-detail">As part of an educational project at
+                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Task: need to make an executable JAR file with a JavaFX game through the
+                                                graphics engine from JavaRush.<br>
+                                                The task involves only working with Maven.
+                                            </p>
+                                            <ul class="spacer">
+                                                Using technologies:
+                                                <li>Maven</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/project-maven"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub link</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                 </li>
 
-                <!-- Проект 3: Resume) -->
+                <!-- Project 3: Resume) -->
                 <li class="projects-item">
                     <button id="myBtn3"><span class="project">Resume<span
                             class="project-bracket"> [</span> HTML, CSS, JavaScript
@@ -428,7 +504,7 @@
                     </div>
                 </li>
 
-                <!-- Проект 2: Island life simulator  -->
+                <!-- Project 2: Island life simulator  -->
                 <li class="projects-item">
                     <button id="myBtn2"><span class="project">Island life simulator<span
                             class="project-bracket"> [</span> Java Core, Multithreading, Stream, Reflection
@@ -453,13 +529,6 @@
                                         food), move (to neighboring locations), breed (if there is a couple in their
                                         location), to die of hunger or be eaten.
                                     </p>
-                                    <ul>
-                                        Realized:
-                                        <li>creating and editing users</li>
-                                        <li>user roles</li>
-                                        <li>creating a quest from a text template</li>
-                                        <li>editing the quest after creation</li>
-                                    </ul>
                                     <ul class="spacer">
                                         Using technologies:
                                         <li>Java Core, Multithreading</li>
@@ -477,7 +546,7 @@
                     </div>
                 </li>
 
-                <!-- Проект 1: Crypto Analyzer -->
+                <!-- Project 1: Crypto Analyzer -->
                 <li class="projects-item">
                     <button id="myBtn1"><span class="project">Crypto Analyzer<span
                             class="project-bracket"> [</span> Java, Swing
@@ -688,7 +757,7 @@
                     <span class="tech-skills-text">JUnit, Mockito</span>
                 </li>
                 <li class="tech-skills-item">
-                    <span class="tech-skills-text">Docker</span>
+                    <span class="tech-skills-text">Docker, Docker Compose</span>
                 </li>
                 <li class="tech-skills-item">
                     <span class="tech-skills-text">IntelliJ IDEA</span>
@@ -707,16 +776,19 @@
             <h3 class="sidebar-title">Soft skills</h3>
             <ul class="soft-skills-list">
                 <li class="soft-skills-item">
-                    <span class="soft-skills-text">Teamwork</span>
+                    <span class="soft-skills-text">Attention to detail</span>
                 </li>
                 <li class="soft-skills-item">
-                    <span class="soft-skills-text">Time management</span>
+                    <span class="soft-skills-text">Quality orientation</span>
                 </li>
                 <li class="soft-skills-item">
                     <span class="soft-skills-text">Adaptability</span>
                 </li>
                 <li class="soft-skills-item">
-                    <span class="soft-skills-text">Attention to detail</span>
+                    <span class="soft-skills-text">Teamwork</span>
+                </li>
+                <li class="soft-skills-item">
+                    <span class="soft-skills-text">Time management</span>
                 </li>
             </ul>
         </div>

@@ -1,54 +1,44 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     const modal = document.getElementById("myModal");
-//     const btn = document.getElementById("myBtn");
-//     const span = document.getElementsByClassName("close")[0];
-//
-//     btn.onclick = function() {
-//         modal.style.display = "block";
-//     }
-//
-//     span.onclick = function() {
-//         modal.style.display = "none";
-//     }
-//
-//     window.onclick = function(event) {
-//         if (event.target === modal) {
-//             modal.style.display = "none";
-//         }
-//     }
-// });
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements with class 'modal'
+    const modals = document.getElementsByClassName('modal');
 
+    // Get all elements with id starting with 'myBtn'
+    const btns = Array.from(document.querySelectorAll('[id^="myBtn"]'));
 
-// Получаем все элементы с классом 'modal'
-var modals = document.getElementsByClassName('modal');
+    // Get all elements with class 'close'
+    const spans = Array.from(document.getElementsByClassName('close'));
 
-// Получаем все элементы с id, начинающимся на 'myBtn'
-var btns = Array.from(document.querySelectorAll('[id^="myBtn"]'));
-
-// Получаем все элементы с классом 'close'
-var spans = Array.from(document.getElementsByClassName('close'));
-
-// Проходимся по каждой кнопке
-btns.forEach(function(btn, index) {
-    // Добавляем обработчик клика, который открывает соответствующее модальное окно
-    btn.onclick = function() {
-        modals[index].style.display = "block";
-    }
-});
-
-// Проходимся по каждому элементу 'close'
-spans.forEach(function(span, index) {
-    // Добавляем обработчик клика, который закрывает соответствующее модальное окно
-    span.onclick = function() {
-        modals[index].style.display = "none";
-    }
-});
-
-// Если пользователь кликает вне модального окна, закрываем его
-window.onclick = function(event) {
-    for (var i = 0; i < modals.length; i++) {
-        if (event.target === modals[i]) {
-            modals[i].style.display = "none";
+    // Iterate over each button
+    btns.forEach(function(btn, index) {
+        // Add a click event listener that opens the corresponding modal window
+        btn.onclick = function() {
+            modals[index].style.display = "block";
         }
+    });
+
+    // Iterate over each 'close' element
+    spans.forEach(function(span, index) {
+        // Add a click event listener that closes the corresponding modal window
+        span.onclick = function() {
+            modals[index].style.display = "none";
+        }
+    });
+
+    // Initialize onclick event for the window to close modal windows when clicked outside
+    window.onclick = function(event) {
+        Array.from(modals).forEach(function(modal) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
     }
-}
+});
+
+document.getElementById('hiddenInstruction').addEventListener('click', function() {
+    const instructions = document.getElementById('instructions');
+    if (instructions.style.display === 'none') {
+        instructions.style.display = 'block';
+    } else {
+        instructions.style.display = 'none';
+    }
+});

@@ -321,6 +321,17 @@ ul li:first-child {
   font-style: italic;
 }
 
+#hiddenInstruction {
+  background-color: #F0F0F0;
+  text-decoration: underline;
+  color: #2f2ff8;
+}
+
+
+
+
+
+
 
 
 
