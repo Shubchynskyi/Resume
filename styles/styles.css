@@ -158,11 +158,13 @@ body {
 }
 .contacts,
 .tech-skills,
-.soft-skills {
+.soft-skills,
+.languages {
   margin-left: 40px;
   margin-bottom: 35px;
 }
-.languages {
+
+.certificates {
   margin-left: 40px;
 }
 .sidebar-title {
@@ -325,6 +327,28 @@ ul li:first-child {
   background-color: #F0F0F0;
   text-decoration: underline;
   color: #2f2ff8;
+}
+
+/* Certificate section styles */
+.certificates {
+  margin-top: 20px;
+}
+
+/* Certificate thumbnail styles */
+.certificate-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certificate-thumbnail {
+  /*width: 80px;*/
+  height: 80px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.certificate-thumbnail:hover {
+  opacity: 0.8;
 }
 
 
