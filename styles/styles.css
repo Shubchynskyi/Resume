@@ -379,6 +379,7 @@ ul li:first-child {
 /* Certificate section styles */
 .certificates {
     margin-top: 20px;
+
 }
 
 /* Certificate thumbnail styles */
@@ -386,6 +387,17 @@ ul li:first-child {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* Certificate thumbnail h4 styles */
+.certificate-thumbnails-h4 {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 10px; /* Уменьшаем отступ снизу до 10px */
+}
+
 
 .certificate-single,
 .certificate-pair {
