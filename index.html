@@ -38,140 +38,192 @@
 
         <!--Projects-->
         <div class="projects">
-            <h3 class="title">Learning projects</h3>
+
+            <h3 class="title">Projects</h3>
             <ol class="projects-list">
 
-                <!-- Project 10: Quests web app (in progress) -->
-                <li class="projects-item">
-                    <button id="myBtn10"><span class="project">Quests web app (in progress)<span
-                            class="project-bracket"> [</span> from servlets to spring (technologies in the description)
-                <span class="project-bracket">]</span></span></button>
-                    <div id="myModal10" class="modal">
+                <!-- Project 11: Quests web app -->
+                <li class="projects-item new-project">
+                    <div class="new-project-header">
+                        <!-- Modal button -->
+                        <button id="myBtn11" class="new-project-title-button">
+                            Quests web app
+                        </button>
+
+                        <!-- Live App Link -->
+                        <a href="https://quests-app.shubchynskyi.pp.ua"
+                           target="_blank"
+                           title="Live Application"
+                           class="new-project-live-link">
+                            <img src="img/projects/liveapplication.svg"
+                                 alt="Live Application"
+                                 class="new-project-live-icon">
+                        </a>
+                    </div>
+
+                    <!-- Modal window -->
+                    <div id="myModal11" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                            <ol>
-                                <!-- Quests - Spring boot, JPA -->
-                                <li class="projects-item-modal">
-                                    <ul class="in-modal-description">
-                                        <li class="projects-item-modal">
-                                            <p class="in-modal-description">
-                                                <span class="bold-italic-text-blue">Web application for creating and passing text quests (Spring Boot, JPA)</span>
-                                                <br><span class="project-detail">As part of an educational project at
-                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
-                                            </p>
-                                            <p class="in-modal-description">
-                                                Mandatory conditions - use Spring Boot, JPA.
-                                            </p>
-                                            <ul>
-                                                Realized:
-                                                <li>creating and editing users</li>
-                                                <li>user roles</li>
-                                                <li>creating a quest from a text template</li>
-                                                <li>editing the quest after creation</li>
-                                            </ul>
-                                            <ul class="spacer">
-                                                Using technologies:
-                                                <li>Spring Boot</li>
-                                                <li>Spring JPA</li>
-                                            </ul>
-                                        </li>
-                                        <li class="projects-item-modal">
-                                            <a href="https://github.com/Shubchynskyi/Quest_project"
-                                               class="project-link"
-                                               target="_blank"
-                                            >GitHub link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- Quests - Spring core / hibernate / BPP / Aspect -->
-                                <li class="projects-item-modal">
-                                    <ul class="in-modal-description">
-                                        <li class="projects-item-modal">
-                                            <p class="in-modal-description">
-                                                <span class="bold-italic-text-blue">Web application for creating and passing text quests (Spring Core, Hibernate, Spring AOP, Bean-postprocessor)</span>
-                                                <br><span class="project-detail">As part of an educational project at
-                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
-                                            </p>
-                                            <p class="in-modal-description">
-                                                Mandatory conditions - use Spring Core, Hibernate, Spring AOP or/and BPP
-                                                for Transactional
-                                            </p>
-                                            <ul>
-                                                Realized:
-                                                <li>database postgresql via docker</li>
-                                                <li>Transactional annotation is processed using a written
-                                                    bean-postprocessor and/or using aspects
-                                                </li>
-                                                <li>creating and editing users</li>
-                                                <li>user roles</li>
-                                                <li>creating a quest from a text template</li>
-                                                <li>editing the quest after creation</li>
-                                            </ul>
-                                            <ul class="spacer">
-                                                Using technologies:
-                                                <li>Spring Core</li>
-                                                <li>Spring AOP</li>
-                                                <li>Hibernate</li>
-                                                <li>Docker (PostgreSQL)</li>
-                                            </ul>
-                                        </li>
-                                        <li class="projects-item-modal">
-                                            <a href="https://github.com/Shubchynskyi/Quest_project/tree/work_with_hibernate_postgres-final"
-                                               class="project-link"
-                                               target="_blank"
-                                            >GitHub link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- Quests - memory -->
-                                <li class="projects-item-modal">
-                                    <ul class="in-modal-description">
-                                        <li class="projects-item-modal">
-                                            <p class="in-modal-description">
-                                                <span class="bold-italic-text-blue">Web application for creating and passing text quests (DB in memory)</span>
-                                                <br><span class="project-detail">As part of an educational project at
-                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
-                                            </p>
-                                            <p class="in-modal-description">
-                                                Mandatory conditions - use of Java servlets and JSP.
-                                            </p>
-                                            <ul>
-                                                Realized:
-                                                <li>database in memory (HashMap)</li>
-                                                <li>bean container is managed by Java</li>
-                                                <li>creating and editing users</li>
-                                                <li>user roles</li>
-                                                <li>creating a quest from a text template</li>
-                                                <li>editing the quest after creation</li>
-                                            </ul>
-                                            <ul class="spacer">
-                                                Using technologies:
-                                                <li>Java servlets, JSP, JSTL</li>
-                                                <li>HTML (using Bootstrap forms)</li>
-                                            </ul>
-                                        </li>
-                                        <li class="projects-item-modal">
-                                            <a href="https://github.com/Shubchynskyi/Quest_project/tree/work_with_memory_db-final"
-                                               class="project-link"
-                                               target="_blank"
-                                            >GitHub link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ol>
+
+                            <div class="new-project-modal-header">
+                                <h2 class="new-project-modal-title">Quests web app</h2>
+                                <div class="new-project-modal-header-links">
+                                    <!-- Live App Link -->
+                                    <a href="https://quests-app.shubchynskyi.pp.ua"
+                                       target="_blank"
+                                       title="Live Application"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/QuestsWebApp.png"
+                                             alt="App Icon"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                    <!-- GitHub readme link -->
+                                    <a href="https://github.com/Shubchynskyi/Quest_project/blob/master/Readme.MD"
+                                       target="_blank"
+                                       title="View on GitHub"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/GitHubCodeLink.png"
+                                             alt="GitHub Link"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="new-project-modal-padding">
+                                <p class="new-project-summary">
+                                    Web application for creating and passing text quests (Spring Boot, JPA)
+                                </p>
+
+                                <h4 class="new-list-title">Features Implemented</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>User Management</b>: Manage users with roles, providing role-based access and functionality tailored to different types of users.</li>
+                                    <li><b>Quest Creation</b>: Create quests from text templates.</li>
+                                    <li><b>Quest Editing</b>: Edit quests even after creation, allowing for flexibility and updates.</li>
+                                    <li><b>Testing</b>: Comprehensive unit, integration, and end-to-end tests using JUnit, Testcontainers, and Selenium to ensure reliability and validate user scenarios in a simulated real-world environment.</li>
+                                    <li><b>Logging</b>: Persistent logging to assist with monitoring and debugging. Logs are stored and preserved across application updates.</li>
+                                    <li><b>Automated CI/CD Pipeline</b>: The project is built, tested, and deployed using Jenkins on a server within Docker, ensuring continuous integration and delivery. The application is tested in isolated Docker containers before deployment to verify stability.</li>
+                                </ul>
+
+                                <h4 class="new-list-title">Technologies Used</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Backend</b>: Java with Spring Boot, Spring Data JPA, Liquibase for database migrations.</li>
+                                    <li><b>Frontend</b>: Thymeleaf for dynamic rendering of pages, combined with HTML, JavaScript, and Bootstrap for responsive design.</li>
+                                    <li><b>Testing</b>: JUnit for unit tests, Testcontainers for integration tests, and Selenium for end-to-end web testing, all running within Docker environments.</li>
+                                    <li><b>Deployment</b>: The application is packaged and deployed using Docker and Docker Compose, managed by a Jenkins CI/CD pipeline with secure credential management.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </li>
 
-                <!-- Project 9: Spring final project -->
+                <!-- Project 9: Simple To-do list -->
+                <li class="projects-item new-project">
+
+                    <div class="new-project-header">
+                        <!-- Modal button -->
+                        <button id="myBtn9" class="new-project-title-button">
+                            Simple Todo list
+                        </button>
+                        <!-- Live App Link -->
+                        <a href="https://todo-list.shubchynskyi.pp.ua"
+                           target="_blank"
+                           title="Live Application"
+                           class="new-project-live-link">
+                            <img src="img/projects/liveapplication.svg"
+                                 alt="Live Application"
+                                 class="new-project-live-icon">
+                        </a>
+                    </div>
+
+                    <!-- Modal window -->
+                    <div id="myModal9" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+
+                            <div class="new-project-modal-header">
+                                <h2 class="new-project-modal-title">Simple Todo list</h2>
+                                <div class="new-project-modal-header-links">
+                                    <!-- Live App Link -->
+                                    <a href="https://todo-list.shubchynskyi.pp.ua"
+                                       target="_blank"
+                                       title="Live Application"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/ToDoList.png"
+                                             alt="Todo App Icon"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                    <!-- GitHub readme link -->
+                                    <a href="https://github.com/Shubchynskyi/TodoList/blob/master/Readme.md"
+                                       target="_blank"
+                                       title="GitHub Link"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/GitHubCodeLink.png"
+                                             alt="GitHub Link"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="new-project-modal-padding">
+                                <p class="new-project-summary">
+                                    Simple web application for creating and managing tasks.
+                                    Uses Spring Boot, JPA (MySQL), Liquibase for migrations, and Docker Compose for easy deployment.
+                                </p>
+
+                                <h4 class="new-list-title">Features Implemented</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Task Management</b>: Create, edit, and manage tasks in a structured ToDo list format.</li>
+                                    <li><b>Integration with Docker Compose</b>: Simplified deployment using Docker Compose for easy setup and management.</li>
+                                </ul>
+
+                                <h4 class="new-list-title">Technologies Used</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Backend</b>: Java with Spring Boot, Spring Data JPA, Liquibase for database migrations, MySQL for data persistence.</li>
+                                    <li><b>Frontend</b>: Thymeleaf for dynamic rendering of pages, combined with HTML and Bootstrap for responsive design.</li>
+                                    <li><b>Deployment</b>: The application is packaged and deployed using Docker and Docker Compose, managed by a Jenkins CI/CD pipeline.</li>
+                                </ul>
+
+                                <!-- Launch Instruction -->
+                                <button id="hiddenInstruction" class="new-project-title-button">
+                                    Script to download and run Docker Compose
+                                </button>
+                                <div id="instructions" style="display:none;">
+                                    <p>
+                                        <a href="files/todo-docker.sh" class="project-link" download>
+                                            Download Script
+                                        </a>
+                                    </p>
+                                    <p><strong>Launch instructions:</strong></p>
+                                    <ul class="new-styled-list">
+                                        <li>Open and run through IntelliJ IDEA, or run Bash/Command Prompt in the same directory as the script:
+                                            <br>1) chmod +x todo-docker.sh
+                                            <br>2) ./todo-docker.sh
+                                        </li>
+                                        <li>Then go to <em>http://localhost:8080</em> in a browser</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ol>
+
+            <button class="collapsible">Learning Projects</button>
+            <div class="content">
+
+            <ol class="projects-list">
+
+                <!-- Project 8: Spring final project -->
                 <li class="projects-item">
-                    <button id="myBtn9">
+                    <button id="myBtn8">
                 <span class="project">Spring final project
                     <span class="project-bracket"> [</span> Spring, Docker, Liquibase <span
                             class="project-bracket">]</span>
                 </span>
                     </button>
-                    <div id="myModal9" class="modal">
+                    <div id="myModal8" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <ul class="in-modal-description">
@@ -197,76 +249,6 @@
                                        class="project-link"
                                        target="_blank"
                                     >GitHub link</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Project 8: To-do list -->
-                <li class="projects-item">
-                    <button id="myBtn8"><span class="project">Todo list project<span
-                            class="project-bracket"> [</span> Spring Boot, Jpa, Thymeleaf, Docker Compose, Liquibase
-    <span class="project-bracket">]</span></span></button>
-                    <div id="myModal8" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <ul class="in-modal-description">
-                                <li class="projects-item-modal">
-                                    <p class="in-modal-description">
-                                        <span class="bold-italic-text-blue">Todo list project</span>
-                                        <br><span class="project-detail">As part of an educational project at
-    <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
-                                    </p>
-                                    <p class="in-modal-description">
-                                        Task: make ToDo web application using Spring Boot<br>
-                                    </p>
-                                    <p class="in-modal-description">
-                                        Mandatory conditions - use Docker Compose
-                                    </p>
-                                    <ul class="spacer">
-                                        Using technologies:
-                                        <li>Spring Boot, Jpa</li>
-                                        <li>Thymeleaf</li>
-                                        <li>Liquibase</li>
-                                        <li>Docker Compose</li>
-                                    </ul>
-                                </li>
-                                <li class="projects-item-modal">
-                                    <a href="https://github.com/Shubchynskyi/TodoList"
-                                       class="project-link"
-                                       target="_blank"
-                                    >GitHub link</a>
-                                </li>
-                                <li class="projects-item-modal">
-                                    <button id="hiddenInstruction" class="project-link">
-                                        Script to download and run Docker-compose
-                                    </button>
-                                    <div id="instructions" style="display:none;">
-                                        <p>
-                                            <a href="files/todo-docker.sh" class="project-link" download>
-                                                Download Script</a>
-                                        </p>
-                                        <div class="in-modal-description">
-                                            Launch instructions
-                                            <ul class="in-modal-description">
-                                                <li>
-                                                    Open and run through Intellij IDEA
-                                                </li>
-                                                <li>
-                                                    Or run Bash/Command Prompt in the same directory as the script. <br>
-                                                    Do two commands: <br>
-                                                    1) chmod +x todo-docker.sh <br>
-                                                    2) ./todo-docker.sh <br>
-                                                    docker-compose.yaml will be downloaded and run which will run
-                                                    containers in docker with application and database.
-                                                </li>
-                                                <li>
-                                                    Go to http://localhost:8080 in a browser
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -618,6 +600,8 @@
                     </div>
                 </li>
             </ol>
+
+            </div>
         </div>
 
         <!-- Education -->

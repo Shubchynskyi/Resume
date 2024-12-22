@@ -3,7 +3,6 @@ body {
     background-color: #f5f7fa;
 }
 
-/* Main styles */
 .main {
     display: flex;
     flex-direction: row-reverse;
@@ -11,14 +10,12 @@ body {
     margin: 0 auto;
 }
 
-/* Main content styles */
 .main-content {
     background-color: #fff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
     padding: 105px 90px;
 }
 
-/* About section styles */
 .about {
     margin-bottom: 40px;
 }
@@ -53,7 +50,6 @@ body {
     width: 500px;
 }
 
-/* Project section styles */
 .projects {
     margin-bottom: 50px;
 }
@@ -99,7 +95,6 @@ body {
     margin-left: 10px;
 }
 
-/* Work section styles */
 .work-position,
 .organization {
     font-style: normal;
@@ -142,7 +137,6 @@ body {
     margin-left: 15px;
 }
 
-/* Education section styles */
 .education-place,
 .education-specialization {
     font-style: normal;
@@ -168,7 +162,6 @@ body {
     color: #000000;
 }
 
-/* Sidebar styles */
 .sidebar {
     background-color: #1e2939;
     padding-top: 40px;
@@ -243,7 +236,6 @@ body {
     line-height: 24px;
 }
 
-/* Social link styles */
 .linkedin-image {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -252,7 +244,7 @@ body {
 
 .social-link {
     display: inline-block;
-    margin-right: 25px; /* Adds space between links */
+    margin-right: 25px;
 }
 
 .github-image {
@@ -278,7 +270,6 @@ body {
     text-decoration: none;
 }
 
-/* Modal window styles */
 .modal {
     display: none;
     position: fixed;
@@ -293,12 +284,11 @@ body {
 }
 
 .modal-content {
-    font-family: Arial, sans-serif; /* The font, as in the .about-description block */
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    /*background-color: #F0F0F0; !* The background color, as in the main file *!*/
-    background-color: #ffffff; /* The background color, white is the best! */
+    background-color: #ffffff;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -323,31 +313,34 @@ body {
     cursor: pointer;
 }
 
-/* Button styles for the popup window */
 button {
-    font-family: Arial, sans-serif; /* The font, as in the main document */
-    color: #333; /* Text color, as in the main document */
-    background-color: #ffffff; /* Button background, choose according to the general page style */
-    border: none; /* Remove the border around the button */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underlining */
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: none;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    font-size: 16px; /* Font size */
+    font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer; /* Change the cursor when hovering over the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
 }
 
 .project-detail {
-    font-size: 0.9em; /* 90% of the current font size */
+    font-size: 0.9em;
     font-style: italic;
 }
 
 .projects-item-modal {
-    margin-bottom: 10px; /* Set the bottom margin for each 'projects-item-modal' class li block */
+    margin-bottom: 10px;
 }
 
 .spacer {
-    margin-top: 10px; /* Set the top margin for the 'spacer' class element */
+    margin-top: 10px;
 }
 
 .in-modal-description {
@@ -376,28 +369,23 @@ ul li:first-child {
     color: #2f2ff8;
 }
 
-/* Certificate section styles */
 .certificates {
     margin-top: 20px;
-
 }
 
-/* Certificate thumbnail styles */
 .certificate-thumbnails {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Certificate thumbnail h4 styles */
 .certificate-thumbnails-h4 {
     color: #ffffff;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 27px;
-    margin-bottom: 10px; /* Уменьшаем отступ снизу до 10px */
+    margin-bottom: 10px;
 }
-
 
 .certificate-single,
 .certificate-pair {
@@ -410,29 +398,166 @@ ul li:first-child {
     height: 80px;
     margin: 5px;
     cursor: pointer;
-    flex: 0 0 auto; /* Чтобы изображения не теряли свой размер при изменении ширины окна браузера */
+    flex: 0 0 auto;
 }
 
 .certificate-thumbnail:hover {
     opacity: 0.8;
 }
 
-/* Добавим отступы для правильного выравнивания второй строки сертификатов */
 .certificate-pair .certificate-thumbnail:not(:last-child) {
     margin-right: 10px;
 }
 
-/* Если нужен отступ между первым сертификатом и остальными */
 .certificate-single {
-    margin-bottom: 10px; /* Отступ между первым сертификатом и следующей парой */
+    margin-bottom: 10px;
 }
 
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
 
+.collapsible:hover {
+    background-color: #ccc;
+}
 
+.content {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 0 18px;
+}
 
+.collapsible.active {
+    background-color: #ccc;
+}
 
+.collapsible.active + .content {
+    max-height: 2000px;
+}
 
+.new-project {
+    margin-bottom: -10px;
+}
 
+.new-project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 
+.new-project-title-button {
+    background: none;
+    border: none;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 0;
+}
 
+.new-project-live-link {
+    text-decoration: none;
+    margin-left: auto;
+}
 
+.new-project-live-icon {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.new-project-live-icon:hover {
+    transform: scale(1.1);
+}
+
+.new-project-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0;
+}
+
+.new-project-modal-title {
+    margin: 0;
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.new-project-modal-header-links {
+    display: flex;
+    gap: 15px;
+}
+
+.new-project-top-right-link {
+    text-decoration: none;
+}
+
+.new-project-modal-icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.new-project-modal-icon:hover {
+    transform: scale(1.1);
+}
+
+.new-project-modal-padding {
+    padding: 20px;
+}
+
+.new-project-summary {
+    font-size: 18px;
+    color: #215e17;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.new-list-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.new-styled-list {
+    margin-left: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.new-styled-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 15px;
+    text-indent: -15px;
+    font-weight: normal;
+}
+
+.new-styled-list li b {
+    font-weight: bold;
+}
+
+.new-styled-list li::before {
+    content: "• ";
+    color: #003366;
+    font-weight: bold;
+}

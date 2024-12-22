@@ -42,3 +42,15 @@ document.getElementById('hiddenInstruction').addEventListener('click', function(
         instructions.style.display = 'none';
     }
 });
+
+document.querySelectorAll('.collapsible').forEach(function (button) {
+    button.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        if (this.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+            content.style.maxHeight = null;
+        }
+    });
+});
