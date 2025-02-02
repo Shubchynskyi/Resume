@@ -51,15 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 });
 
-document.getElementById('hiddenInstruction').addEventListener('click', function () {
-    const instructions = document.getElementById('instructions');
-    if (instructions.style.display === 'none') {
-        instructions.style.display = 'block';
-    } else {
-        instructions.style.display = 'none';
-    }
-});
-
 document.querySelectorAll('.collapsible').forEach(function (button) {
     button.addEventListener('click', function () {
         this.classList.toggle('active');
