@@ -561,3 +561,32 @@ ul li:first-child {
     color: #003366;
     font-weight: bold;
 }
+
+.custom-nested-list {
+    list-style-type: none;
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+.custom-nested-list li {
+    margin-bottom: 0.3rem;
+}
+
+#language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    /*z-index: 1000;     !* On top of the other elements *!*/
+}
+
+#language-switcher a {
+    margin-left: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.img-icon {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+}

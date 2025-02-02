@@ -17,11 +17,21 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-<!--Main-->
+
 
 <div class="main">
     <!--Main content-->
     <div class="main-content">
+
+        <!-- language-switcher -->
+        <div id="language-switcher">
+            <a href="javascript:void(0);" onclick="changeLanguage('de');">
+                <img src="/img/icon_lang/de-icon.png" alt="DE" class="img-icon">
+            </a>
+            <a href="javascript:void(0);" onclick="changeLanguage('en');">
+                <img src="/img/icon_lang/en-icon.png" alt="EN" class="img-icon">
+            </a>
+        </div>
 
         <!--about user-->
         <div class="about">
@@ -42,11 +52,100 @@
             <h3 class="title">Projects</h3>
             <ol class="projects-list">
 
-                <!-- Project 11: Quests web app -->
+                <!-- Project 11: TicTacToe Web Application -->
+                <li class="projects-item new-project">
+                    <div class="new-project-header">
+                        <!-- Button to open the modal -->
+                        <button id="myBtn11" class="new-project-title-button">
+                            Tic-Tac-Toe Game (Online, PWA wrapper)
+                        </button>
+                        <!-- Link to the live application -->
+                        <a href="https://tic-tac-toe.shubchynskyi.pp.ua"
+                           target="_blank"
+                           title="Live Application"
+                           class="new-project-live-link">
+                            <img src="img/projects/liveapplication.svg"
+                                 alt="Live Application"
+                                 class="new-project-live-icon">
+                        </a>
+                    </div>
+
+                    <!-- Modal Window -->
+                    <div id="myModal10" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Header -->
+                            <div class="new-project-modal-header">
+                                <h2 class="new-project-modal-title">Tic-tac-toe</h2>
+                                <div class="new-project-modal-header-links">
+                                    <!-- Project logo/link -->
+                                    <a href="https://tic-tac-toe.shubchynskyi.pp.ua"
+                                       target="_blank"
+                                       title="TicTacToe App"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/TicTacToe.png"
+                                             alt="TicTacToe Icon"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                    <!-- GitHub link -->
+                                    <a href="https://github.com/Shubchynskyi/TicTacToe/blob/master/Readme.md"
+                                       target="_blank"
+                                       title="GitHub Link"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/GitHubCodeLink.png"
+                                             alt="GitHub Link"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Modal Content -->
+                            <div class="new-project-modal-padding">
+                                <!-- Project Summary -->
+                                <p class="new-project-summary">
+                                    A web-based TicTacToe game with adaptive design for desktops, tablets, and mobile devices.
+                                    The application leverages a Progressive Web App (PWA) wrapper to allow installation on the home screen.
+                                    It offers single-player mode with four difficulty levels, local two-player mode, and online multiplayer via WebSocket.
+                                </p>
+
+                                <h4 class="new-list-title">Features Implemented</h4>
+                                <ul class="new-styled-list">
+                                    <li>
+                                        <b>Adaptive Design</b>: Responsive UI optimized for desktops, tablets, and mobile devices, with PWA support for home screen installation.
+                                    </li>
+                                    <li>
+                                        <b>Multiple Game Modes</b>:
+                                        <ul class="custom-nested-list">
+                                            <li><i>Single Player</i> with four difficulty levels.</li>
+                                            <li><i>Local Two-Player</i> mode for shared-device gameplay.</li>
+                                            <li><i>Online Multiplayer</i> via WebSocket with session tracking and inactivity timers.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>Inactivity Timer</b>: Automatically closes inactive games to prevent resource buildup.
+                                    </li>
+                                    <li>
+                                        <b>Robust Testing</b>: Includes unit, integration, and Selenium end-to-end tests.
+                                    </li>
+                                </ul>
+
+                                <h4 class="new-list-title">Technologies Used</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Backend</b>: Spring Boot and WebSocket support.</li>
+                                    <li><b>Frontend</b>: Thymeleaf for dynamic rendering, Bulma CSS for a modern, responsive design, and JavaScript.</li>
+                                    <li><b>Deployment</b>: Containerized with Docker and deployed via a Jenkins CI/CD pipeline.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 10: Quests web app -->
                 <li class="projects-item new-project">
                     <div class="new-project-header">
                         <!-- Modal button -->
-                        <button id="myBtn11" class="new-project-title-button">
+                        <button id="myBtn10" class="new-project-title-button">
                             Quests web app
                         </button>
 
@@ -183,26 +282,6 @@
                                     <li><b>Frontend</b>: Thymeleaf for dynamic rendering of pages, combined with HTML and Bootstrap for responsive design.</li>
                                     <li><b>Deployment</b>: The application is packaged and deployed using Docker and Docker Compose, managed by a Jenkins CI/CD pipeline.</li>
                                 </ul>
-
-                                <!-- Launch Instruction -->
-                                <button id="hiddenInstruction" class="new-project-title-button">
-                                    Script to download and run Docker Compose
-                                </button>
-                                <div id="instructions" style="display:none;">
-                                    <p>
-                                        <a href="files/todo-docker.sh" class="project-link" download>
-                                            Download Script
-                                        </a>
-                                    </p>
-                                    <p><strong>Launch instructions:</strong></p>
-                                    <ul class="new-styled-list">
-                                        <li>Open and run through IntelliJ IDEA, or run Bash/Command Prompt in the same directory as the script:
-                                            <br>1) chmod +x todo-docker.sh
-                                            <br>2) ./todo-docker.sh
-                                        </li>
-                                        <li>Then go to <em>http://localhost:8080</em> in a browser</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -661,13 +740,14 @@
                     Logistics Manager <span class="organization">STT LLC</span>
                 </h4>
                 <p class="period">
-                    August 2015 - March 2022 <span class="line">|</span> Ukraine,
-                    Mariupol
+                    August 2015 - March 2022 <span class="line">|</span> Ukraine, Mariupol
                 </p>
                 <ul class="work-list">
-                    <li class="work-list-item">Vessel forwarding.</li>
                     <li class="work-list-item">
-                        Control of cargo delivery to the seaport.
+                        Coordinated vessel forwarding operations with daily data updates and analysis for proactive planning of logistics chains.
+                    </li>
+                    <li class="work-list-item">
+                        Implemented automated data collection and extraction processes to optimize freight transportation routes.
                     </li>
                 </ul>
             </div>
@@ -677,28 +757,31 @@
                     CEO / Owner <span class="organization">SportBoom.com.ua</span>
                 </h4>
                 <p class="period">
-                    February 2016 - March 2022 <span class="line">|</span> Ukraine,
-                    Mariupol
+                    February 2016 - March 2022 <span class="line">|</span> Ukraine, Mariupol
                 </p>
                 <ul class="work-list">
-                    <li class="work-list-item">Sports shoes Online Store.</li>
-                    <li class="work-list-item">Logistics management.</li>
-                    <li class="work-list-item">Inventory control.</li>
-                    <li class="work-list-item">Client base management.</li>
+                    <li class="work-list-item">
+                        Designed and maintained an online store with structural and design enhancements to improve the overall user experience.
+                    </li>
+                    <li class="work-list-item">
+                        Automated product listings on various platforms and social media, while organizing order processing and inventory flows through centralized database management.
+                    </li>
                 </ul>
             </div>
             <!--Company 3-->
             <div>
                 <h4 class="work-position">
-                    Manager <span class="organization">Computer equipment store</span>
+                    Manager <span class="organization">Computer Equipment Store</span>
                 </h4>
                 <p class="period">
-                    September 2004 - August 2015 <span class="line">|</span> Ukraine,
-                    Mariupol
+                    September 2004 - August 2015 <span class="line">|</span> Ukraine, Mariupol
                 </p>
                 <ul class="work-list">
                     <li class="work-list-item">
-                        Sale and maintenance of computer equipment.
+                        Organized and maintained the corporate IT infrastructure, including server configuration and remote access facilitation.
+                    </li>
+                    <li class="work-list-item">
+                        Implemented a robust backup system and centralized data management to enhance the resilience of business processes.
                     </li>
                 </ul>
             </div>
@@ -834,16 +917,16 @@
             <h3 class="sidebar-title">Languages</h3>
             <ul class="languages-list">
                 <li class="languages-item">
-                    <span class="languages-text">Ukraine - native</span>
-                </li>
-                <li class="languages-item">
-                    <span class="languages-text">Russian - native</span>
-                </li>
-                <li class="languages-item">
                     <span class="languages-text">English - B1+</span>
                 </li>
                 <li class="languages-item">
                     <span class="languages-text">German - B1</span>
+                </li>
+                <li class="languages-item">
+                    <span class="languages-text">Ukraine - native</span>
+                </li>
+                <li class="languages-item">
+                    <span class="languages-text">Russian - native</span>
                 </li>
             </ul>
         </div>

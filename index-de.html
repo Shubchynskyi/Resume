@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="CV Shubchynskyi"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <title>Lebenslauf</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+<div class="main">
+    <!--Main content-->
+    <div class="main-content">
+
+        <!-- language-switcher -->
+        <div id="language-switcher">
+            <a href="javascript:void(0);" onclick="changeLanguage('de');">
+                <img src="/img/icon_lang/de-icon.png" alt="DE" class="img-icon">
+            </a>
+            <a href="javascript:void(0);" onclick="changeLanguage('en');">
+                <img src="/img/icon_lang/en-icon.png" alt="EN" class="img-icon">
+            </a>
+        </div>
+
+        <!--about user-->
+        <div class="about">
+            <h2 class="about-position">Java-Softwareentwickler</h2>
+            <h1 class="about-name">Dmytro Shubchynskyi</h1>
+            <p class="about-description">
+                Ich suche eine Position als Java-Softwareentwickler, in der ich meine Fähigkeiten und meinen Einsatz einbringen kann.
+                Ich freue mich darauf, an anspruchsvollen Projekten zu arbeiten, neue Technologien zu erlernen und mein Können weiter auszubauen.
+                Mein Ziel ist es, Teil eines Unternehmens zu werden, das berufliche Weiterentwicklung schätzt und wo meine sorgfältige Arbeitsweise einen echten Unterschied machen kann.
+                Ich bin gut organisiert, verantwortungsbewusst, teamfähig und arbeite konfliktfrei.
+            </p>
+        </div>
+
+        <!--Projects-->
+        <div class="projects">
+
+            <h3 class="title">Projects</h3>
+            <ol class="projects-list">
+
+                <!-- Project 11: TicTacToe Web Application -->
+                <li class="projects-item new-project">
+                    <div class="new-project-header">
+                        <!-- Button to open the modal -->
+                        <button id="myBtn11" class="new-project-title-button">
+                            Tic-Tac-Toe Spiel (Online, PWA-Umgebung)
+                        </button>
+                        <!-- Link to the live application -->
+                        <a href="https://tic-tac-toe.shubchynskyi.pp.ua"
+                           target="_blank"
+                           title="Live-Anwendung"
+                           class="new-project-live-link">
+                            <img src="img/projects/liveapplication.svg"
+                                 alt="Live-Anwendung"
+                                 class="new-project-live-icon">
+                        </a>
+                    </div>
+                    <!-- Modal Window -->
+                    <div id="myModal10" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <!-- Modal Header -->
+                            <div class="new-project-modal-header">
+                                <h2 class="new-project-modal-title">Tic-Tac-Toe</h2>
+                                <div class="new-project-modal-header-links">
+                                    <!-- Project logo/link -->
+                                    <a href="https://tic-tac-toe.shubchynskyi.pp.ua"
+                                       target="_blank"
+                                       title="TicTacToe App"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/TicTacToe.png"
+                                             alt="TicTacToe Icon"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                    <!-- GitHub link -->
+                                    <a href="https://github.com/Shubchynskyi/TicTacToe/blob/master/Readme.md"
+                                       target="_blank"
+                                       title="GitHub-Link"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/GitHubCodeLink.png"
+                                             alt="GitHub-Link"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Modal Content -->
+                            <div class="new-project-modal-padding">
+                                <!-- Project Summary -->
+                                <p class="new-project-summary">
+                                    Ein webbasiertes Tic-Tac-Toe-Spiel mit adaptivem Design für Desktops, Tablets und mobile Geräte.
+                                    Die Anwendung nutzt eine Progressive Web App (PWA)-Umgebung, um die Installation auf dem Startbildschirm zu ermöglichen.
+                                    Es bietet einen Einzelspielermodus mit vier Schwierigkeitsstufen, einen lokalen Zwei-Spieler-Modus und Online-Mehrspieler über WebSocket.
+                                </p>
+                                <h4 class="new-list-title">Implementierte Funktionen</h4>
+                                <ul class="new-styled-list">
+                                    <li>
+                                        <b>Adaptives Design</b>: Responsive Benutzeroberfläche, optimiert für Desktops, Tablets und mobile Geräte, mit PWA-Unterstützung für die Installation auf dem Startbildschirm.
+                                    </li>
+                                    <li>
+                                        <b>Mehrere Spielmodi</b>:
+                                        <ul class="custom-nested-list">
+                                            <li><i>Einzelspieler</i> mit vier Schwierigkeitsstufen.</li>
+                                            <li><i>Lokaler Zwei-Spieler</i>-Modus für gemeinsames Spielen auf einem Gerät.</li>
+                                            <li><i>Online-Mehrspieler</i> über WebSocket mit Sitzungsverfolgung und Inaktivitätstimer.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>Inaktivitätstimer</b>: Schließt automatisch inaktive Spiele, um Ressourcenverschwendung zu vermeiden.
+                                    </li>
+                                    <li>
+                                        <b>Robuste Tests</b>: Enthält Unit-, Integrations- und Selenium-End-to-End-Tests.
+                                    </li>
+                                </ul>
+                                <h4 class="new-list-title">Verwendete Technologien</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Backend</b>: Spring Boot und WebSocket-Unterstützung.</li>
+                                    <li><b>Frontend</b>: Thymeleaf für dynamisches Rendering, Bulma CSS für ein modernes, responsives Design und JavaScript.</li>
+                                    <li><b>Deployment</b>: Containerisiert mit Docker und bereitgestellt über eine Jenkins CI/CD-Pipeline.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 10: Quests web app -->
+                <li class="projects-item new-project">
+                    <div class="new-project-header">
+                        <!-- Modal button -->
+                        <button id="myBtn10" class="new-project-title-button">
+                            Quests-Webanwendung
+                        </button>
+                        <!-- Live App Link -->
+                        <a href="https://quests-app.shubchynskyi.pp.ua"
+                           target="_blank"
+                           title="Live-Anwendung"
+                           class="new-project-live-link">
+                            <img src="img/projects/liveapplication.svg"
+                                 alt="Live-Anwendung"
+                                 class="new-project-live-icon">
+                        </a>
+                    </div>
+                    <!-- Modal window -->
+                    <div id="myModal11" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="new-project-modal-header">
+                                <h2 class="new-project-modal-title">Quests-Webanwendung</h2>
+                                <div class="new-project-modal-header-links">
+                                    <!-- Live App Link -->
+                                    <a href="https://quests-app.shubchynskyi.pp.ua"
+                                       target="_blank"
+                                       title="Live-Anwendung"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/QuestsWebApp.png"
+                                             alt="App-Icon"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                    <!-- GitHub readme link -->
+                                    <a href="https://github.com/Shubchynskyi/Quest_project/blob/master/Readme.MD"
+                                       target="_blank"
+                                       title="Auf GitHub anzeigen"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/GitHubCodeLink.png"
+                                             alt="GitHub-Link"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="new-project-modal-padding">
+                                <p class="new-project-summary">
+                                    Webanwendung zur Erstellung und Durchführung von Textquests (Spring Boot, JPA).
+                                </p>
+                                <h4 class="new-list-title">Implementierte Funktionen</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Benutzerverwaltung</b>: Verwaltung von Benutzern mit Rollen, wodurch rollenbasierte Zugriffe und Funktionen für verschiedene Benutzertypen bereitgestellt werden.</li>
+                                    <li><b>Quest-Erstellung</b>: Erstellen von Quests aus Textvorlagen.</li>
+                                    <li><b>Quest-Bearbeitung</b>: Bearbeiten von Quests auch nach der Erstellung, um Flexibilität und Aktualisierungen zu ermöglichen.</li>
+                                    <li><b>Tests</b>: Umfassende Unit-, Integrations- und End-to-End-Tests mit JUnit, Testcontainers und Selenium, um Zuverlässigkeit sicherzustellen und Nutzerszenarien in einer simulierten realen Umgebung zu validieren.</li>
+                                    <li><b>Logging</b>: Persistente Protokollierung zur Unterstützung der Überwachung und Fehlerbehebung. Protokolle werden gespeichert und bleiben über Anwendungsaktualisierungen hinweg erhalten.</li>
+                                    <li><b>Automatisierte CI/CD-Pipeline</b>: Das Projekt wird mit Jenkins auf einem Server in Docker gebaut, getestet und bereitgestellt, um kontinuierliche Integration und Auslieferung zu gewährleisten. Die Anwendung wird vor der Bereitstellung in isolierten Docker-Containern getestet, um Stabilität zu überprüfen.</li>
+                                </ul>
+                                <h4 class="new-list-title">Verwendete Technologien</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Backend</b>: Java mit Spring Boot, Spring Data JPA, Liquibase für Datenbankmigrationen.</li>
+                                    <li><b>Frontend</b>: Thymeleaf für die dynamische Seitendarstellung, kombiniert mit HTML, JavaScript und Bootstrap für responsives Design.</li>
+                                    <li><b>Tests</b>: JUnit für Unittests, Testcontainers für Integrationstests und Selenium für End-to-End-Webtests, alles innerhalb von Docker-Umgebungen laufend.</li>
+                                    <li><b>Deployment</b>: Die Anwendung wird mit Docker und Docker Compose verpackt und bereitgestellt, verwaltet durch eine Jenkins CI/CD-Pipeline mit sicherer Verwaltung von Anmeldeinformationen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 9: Simple To-do list -->
+                <li class="projects-item new-project">
+                    <div class="new-project-header">
+                        <!-- Modal button -->
+                        <button id="myBtn9" class="new-project-title-button">
+                            Einfache Todo-Liste
+                        </button>
+                        <!-- Live App Link -->
+                        <a href="https://todo-list.shubchynskyi.pp.ua"
+                           target="_blank"
+                           title="Live-Anwendung"
+                           class="new-project-live-link">
+                            <img src="img/projects/liveapplication.svg"
+                                 alt="Live-Anwendung"
+                                 class="new-project-live-icon">
+                        </a>
+                    </div>
+                    <!-- Modal window -->
+                    <div id="myModal9" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="new-project-modal-header">
+                                <h2 class="new-project-modal-title">Einfache Todo-Liste</h2>
+                                <div class="new-project-modal-header-links">
+                                    <!-- Live App Link -->
+                                    <a href="https://todo-list.shubchynskyi.pp.ua"
+                                       target="_blank"
+                                       title="Live-Anwendung"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/ToDoList.png"
+                                             alt="Todo-App-Icon"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                    <!-- GitHub readme link -->
+                                    <a href="https://github.com/Shubchynskyi/TodoList/blob/master/Readme.md"
+                                       target="_blank"
+                                       title="GitHub-Link"
+                                       class="new-project-top-right-link">
+                                        <img src="img/projects/GitHubCodeLink.png"
+                                             alt="GitHub-Link"
+                                             class="new-project-modal-icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="new-project-modal-padding">
+                                <p class="new-project-summary">
+                                    Einfache Webanwendung zum Erstellen und Verwalten von Aufgaben.
+                                    Nutzt Spring Boot, JPA (MySQL), Liquibase für Migrationen und Docker Compose für eine einfache Bereitstellung.
+                                </p>
+                                <h4 class="new-list-title">Implementierte Funktionen</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Aufgabenverwaltung</b>: Erstellen, Bearbeiten und Verwalten von Aufgaben in einem strukturierten ToDo-Listenformat.</li>
+                                    <li><b>Integration mit Docker Compose</b>: Vereinfachte Bereitstellung durch Docker Compose für eine einfache Einrichtung und Verwaltung.</li>
+                                </ul>
+                                <h4 class="new-list-title">Verwendete Technologien</h4>
+                                <ul class="new-styled-list">
+                                    <li><b>Backend</b>: Java mit Spring Boot, Spring Data JPA, Liquibase für Datenbankmigrationen, MySQL für die Datenspeicherung.</li>
+                                    <li><b>Frontend</b>: Thymeleaf für die dynamische Seitendarstellung, kombiniert mit HTML und Bootstrap für responsives Design.</li>
+                                    <li><b>Deployment</b>: Die Anwendung wird mit Docker und Docker Compose verpackt und bereitgestellt, verwaltet durch eine Jenkins CI/CD-Pipeline.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ol>
+
+            <button class="collapsible">Learning Projects</button>
+            <div class="content">
+
+            <ol class="projects-list">
+
+                <!-- Project 8: Spring final project -->
+                <li class="projects-item">
+                    <button id="myBtn8">
+        <span class="project">Spring-Abschlussprojekt
+            <span class="project-bracket"> [</span> Spring, Docker, Liquibase <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal8" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        <span class="bold-italic-text-blue">Spring-Abschlussprojekt</span>
+                                        <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                        <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        11 verschiedene Aufgaben (Aufgaben und Lösungen befinden sich in der Readme.MD-Datei)
+                                    </p>
+                                    <ul class="spacer">
+                                        Verwendete Technologien:
+                                        <li>Spring-Tests, Testcontainers</li>
+                                        <li>Liquibase</li>
+                                        <li>Docker, docker-compose</li>
+                                        <li>Bash-Skripte</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/project-final-spring"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub-Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 7: Hibernate study projects -->
+                <li class="projects-item">
+                    <button id="myBtn7">
+        <span class="project">Hibernate-Studienprojekte
+            <span class="project-bracket"> [</span> Hibernate, MySQL, Redis <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal7" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ol>
+                                <!-- Projekt Hibernate Final -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text-blue">Hibernate-Studienprojekt Final</span>
+                                                <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Aufgabe: Schreiben Sie ein Java-Programm, um Daten von einer SQL-Datenbank nach Redis zu übertragen. Entity-Mapping. Abfrageoptimierung.
+                                            </p>
+                                            <ul class="spacer">
+                                                Verwendete Technologien:
+                                                <li>Hibernate</li>
+                                                <li>Redis & MySQL in Docker</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/Hibernate_final_project"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub-Link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Projekt Hibernate 2 -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text-blue">Hibernate-Studienprojekt 2</span>
+                                                <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Aufgabe: Mappen Sie die Entität auf bestehende Tabellen und fügen Sie minimale Funktionalität hinzu, um sicherzustellen, dass das Mapping korrekt durchgeführt wurde.
+                                            </p>
+                                            <ul class="spacer">
+                                                Verwendete Technologien:
+                                                <li>Hibernate</li>
+                                                <li>MySQL in Docker</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/project-hibernate-2"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub-Link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Projekt Hibernate 1 -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text-blue">Hibernate-Studienprojekt 1</span>
+                                                <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Aufgabe: Implementieren Sie eine Repository-Schicht mit Hibernate.
+                                            </p>
+                                            <ul class="spacer">
+                                                Verwendete Technologien:
+                                                <li>Hibernate</li>
+                                                <li>MySQL in Docker</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/project-hibernate-1"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub-Link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 6: Java servlets project Tic-Tac-Toe -->
+                <li class="projects-item">
+                    <button id="myBtn6">
+        <span class="project">Java-Servlet-Projekt (Tic-Tac-Toe-Spiel)
+            <span class="project-bracket"> [</span> Java-Servlets, JSP <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal6" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        <span class="bold-italic-text-blue">Java-Servlet-Projekt</span>
+                                        <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                        <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Aufgabe: Tic-Tac-Toe-Spiel mit Servlets und JSP erstellen.
+                                    </p>
+                                    <ul>
+                                        Realisiert:
+                                        <li>Komplexe Logik (4 Schwierigkeitsstufen)</li>
+                                        <li>Symbolauswahl (Kreuz oder Kreis, Kreuz beginnt immer zuerst)</li>
+                                    </ul>
+                                    <ul class="spacer">
+                                        Verwendete Technologien:
+                                        <li>Java-Servlets, JSP, JSTL</li>
+                                        <li>HTML, CSS, JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/project-servlet"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub-Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 5: Frontend mini-project -->
+                <li class="projects-item">
+                    <button id="myBtn5">
+        <span class="project">Frontend-Mini-Projekt
+            <span class="project-bracket"> [</span> HTML, CSS, JavaScript <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        <span class="bold-italic-text-blue">Frontend-Mini-Projekt</span>
+                                        <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                        <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Aufgabe: Erstellen Sie eine Benutzeroberfläche für das CRUD-Backend mit HTML, CSS und JS.<br>
+                                        Wir werden ein Admin-Panel zur Verwaltung von Online-Spielkonten erstellen.
+                                    </p>
+                                    <ul class="spacer">
+                                        Verwendete Technologien:
+                                        <li>HTML, CSS, JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/project-front"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub-Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 4: Testing & logging & Maven mini-projects -->
+                <li class="projects-item">
+                    <button id="myBtn4">
+        <span class="project">Maven / Testing / Logging Mini-Projekte
+            <span class="project-bracket"> [</span> Maven, Log4j, JUnit, Mockito <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ol>
+                                <!-- Testing and logging mini-project -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text-blue">Testing und Logging Mini-Projekt</span>
+                                                <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Aufgabe: Testing und Logging hinzufügen.
+                                            </p>
+                                            <ul class="spacer">
+                                                Verwendete Technologien:
+                                                <li>Log4j, JUnit, Mockito</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/hippodrome"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub-Link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Maven mini-project -->
+                                <li class="projects-item-modal">
+                                    <ul class="in-modal-description">
+                                        <li class="projects-item-modal">
+                                            <p class="in-modal-description">
+                                                <span class="bold-italic-text-blue">Maven Mini-Projekt</span>
+                                                <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                                <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                            </p>
+                                            <p class="in-modal-description">
+                                                Aufgabe: Erstellen Sie eine ausführbare JAR-Datei mit einem JavaFX-Spiel über die
+                                                Grafik-Engine von JavaRush.<br>
+                                                Die Aufgabe umfasst nur die Arbeit mit Maven.
+                                            </p>
+                                            <ul class="spacer">
+                                                Verwendete Technologien:
+                                                <li>Maven</li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects-item-modal">
+                                            <a href="https://github.com/Shubchynskyi/project-maven"
+                                               class="project-link"
+                                               target="_blank"
+                                            >GitHub-Link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 3: Resume -->
+                <li class="projects-item">
+                    <button id="myBtn3">
+        <span class="project">Lebenslauf
+            <span class="project-bracket"> [</span> HTML, CSS, JavaScript <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        <span class="bold-italic-text-blue">Mein Lebenslauf</span>
+                                    </p>
+                                    <ul class="spacer">
+                                        Verwendete Technologien:
+                                        <li>HTML, CSS, JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/resume"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub-Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 2: Island life simulator  -->
+                <li class="projects-item">
+                    <button id="myBtn2">
+        <span class="project">Insel-Lebenssimulator
+            <span class="project-bracket"> [</span> Java Core, Multithreading, Stream, Reflection <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        <span class="bold-italic-text-blue">Simulation des Lebens auf der Insel (Tiere und Pflanzen) Konsolenversion</span>
+                                        <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                        <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Pflichtbedingungen - die Verwendung von OOP und Multithreading.
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Aufgabe: Programmieren Sie ein Inselmodell mit variablen Parametern, bestehend aus einem Array von Standorten. Standorte werden mit Vegetation und Tieren gefüllt. Tiere können: Pflanzen und/oder andere Tiere essen (wenn ihr Standort geeignete Nahrung bietet), sich bewegen (zu benachbarten Standorten), sich fortpflanzen (wenn es ein Paar an ihrem Standort gibt), verhungern oder gefressen werden.
+                                    </p>
+                                    <ul class="spacer">
+                                        Verwendete Technologien:
+                                        <li>Java Core, Multithreading</li>
+                                        <li>Stream, Reflection</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/IslandLima"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub-Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Project 1: Crypto Analyzer -->
+                <li class="projects-item">
+                    <button id="myBtn1">
+        <span class="project">Krypto-Analysator
+            <span class="project-bracket"> [</span> Java, Swing <span class="project-bracket">]</span>
+        </span>
+                    </button>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <ul class="in-modal-description">
+                                <li class="projects-item-modal">
+                                    <p class="in-modal-description">
+                                        <span class="bold-italic-text-blue">Krypto-Analysator mit Caesar-Chiffre</span>
+                                        <br><span class="project-detail">Als Teil eines Bildungsprojekts an der
+                        <a href="https://javarush.com/university" target="_blank">Javarush University</a></span>
+                                    </p>
+                                    <p class="in-modal-description">
+                                        Aufgabe: Das Programm kann Text mit einem Schlüssel verschlüsseln, Text mit einem Schlüssel entschlüsseln, Text durch Brute-Force entschlüsseln, Text mithilfe statistischer Analyse und manueller Zeichenersetzung entschlüsseln. Es gibt eine Konsolenversion und eine Swing-Version.
+                                    </p>
+                                    <ul class="spacer">
+                                        Verwendete Technologien:
+                                        <li>Java, Swing</li>
+                                    </ul>
+                                </li>
+                                <li class="projects-item-modal">
+                                    <a href="https://github.com/Shubchynskyi/CryptoAnalyser"
+                                       class="project-link"
+                                       target="_blank"
+                                    >GitHub-Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education">
+            <h3 class="title">Bildungsweg</h3>
+            <!-- Deutsch B2 Berufskurs -->
+            <div>
+                <h4 class="education-title">Deutsch B2 Berufskurs</h4>
+                <p class="period">
+                    Februar 2025 - September 2025 <span class="line">|</span> Ziel: B2 (AIM-Bildung e.V. Sprachschule | Aschaffenburg)
+                </p>
+            </div>
+            <!-- Deutsch B1 Integrationskurs -->
+            <div>
+                <h4 class="education-title">Deutsch-Integrationskurs</h4>
+                <p class="period">
+                    September 2023 - September 2024 <span class="line">|</span> Ziel: B1 (Language & Progress Fremdsprachenakademie | Frankfurt)
+                </p>
+            </div>
+            <!-- EPAM Systems -->
+            <div>
+                <h4 class="education-title">
+                    <a href="https://www.epam.com" class="edu-link" target="_blank">EPAM Systems</a> -
+                    <span class="education-specialization">Java Junior Entwickler</span>
+                </h4>
+                <p class="period">
+                    Juli 2023 - September 2023 <span class="line">|</span> Ukraine, Kiew (online)
+                </p>
+            </div>
+            <!-- Javarush University -->
+            <div>
+                <h4 class="education-title">
+                    <a href="https://javarush.com/university" class="edu-link" target="_blank">Javarush University</a> -
+                    <span class="education-specialization">Java Junior Entwickler</span>
+                </h4>
+                <p class="period">
+                    Januar 2022 - Juli 2023 <span class="line">|</span> Ukraine, Kiew (online)
+                </p>
+            </div>
+            <!-- Pre-Azov Staatliche Technische Universität -->
+            <div>
+                <h4 class="education-place">Pre-Azov Staatliche Technische Universität</h4>
+                <p class="education-specialization">
+                    Bachelor-Abschluss – Schweißtechnik
+                </p>
+                <p class="period">
+                    September 2010 - Juni 2013 <span class="line">|</span> Ukraine, Mariupol
+                </p>
+            </div>
+        </div>
+
+        <!--Work-->
+        <div class="work">
+            <h3 class="title">Berufserfahrung</h3>
+            <!-- Firma 1 -->
+            <div>
+                <h4 class="work-position">
+                    Logistikmanager <span class="organization">STT LLC</span>
+                </h4>
+                <p class="period">
+                    August 2015 - März 2022 <span class="line">|</span> Ukraine, Mariupol
+                </p>
+                <ul class="work-list">
+                    <li class="work-list-item">
+                        Koordinierte die Abfertigung von Schiffen durch tägliche Datenaktualisierungen und -analysen zur proaktiven Planung von Logistikketten.
+                    </li>
+                    <li class="work-list-item">
+                        Implementierte automatisierte Prozesse zur Datenerfassung und -auswertung zur Optimierung von Frachttransportwegen.
+                    </li>
+                </ul>
+            </div>
+            <!-- Firma 2 -->
+            <div>
+                <h4 class="work-position">
+                    Geschäftsführer / Inhaber <span class="organization">SportBoom.com.ua</span>
+                </h4>
+                <p class="period">
+                    Februar 2016 - März 2022 <span class="line">|</span> Ukraine, Mariupol
+                </p>
+                <ul class="work-list">
+                    <li class="work-list-item">
+                        Entwarf und betreute einen Online-Shop mit strukturellen und gestalterischen Verbesserungen zur Optimierung der Nutzererfahrung.
+                    </li>
+                    <li class="work-list-item">
+                        Automatisierte Produktlistings auf verschiedenen Plattformen und in sozialen Medien sowie die Organisation von Bestellvorgängen und Lagerbestandsflüssen durch zentralisiertes Datenbankmanagement.
+                    </li>
+                </ul>
+            </div>
+            <!-- Firma 3 -->
+            <div>
+                <h4 class="work-position">
+                    Manager <span class="organization">Computer Equipment Store</span>
+                </h4>
+                <p class="period">
+                    September 2004 - August 2015 <span class="line">|</span> Ukraine, Mariupol
+                </p>
+                <ul class="work-list">
+                    <li class="work-list-item">
+                        Organisierte und wartete die unternehmensinterne IT-Infrastruktur, einschließlich Serverkonfiguration und Einrichtung von Fernzugriffsmöglichkeiten.
+                    </li>
+                    <li class="work-list-item">
+                        Implementierte ein robustes Backup-System und zentrales Datenmanagement zur Steigerung der Widerstandsfähigkeit der Geschäftsprozesse.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Sidebar-->
+    <aside class="sidebar">
+        <img src="img/photo.jpg" alt="main photo" class="photo"/>
+        <!--Contacts-->
+        <div class="contacts">
+            <h3 class="sidebar-title">Kontakte</h3>
+            <div>
+
+<!--                <p>-->
+<!--                    <span class="contact-type">mob:</span>-->
+<!--                    <a href="tel:+380679153889" class="contact-link">+380679153889</a>-->
+<!--                    <a href="tg://resolve?domain=shubchynskyi" class="messenger-link">-->
+<!--                        <img src="img/messenger/telegram_logo.png" alt="Telegram" class="messenger-image"/>-->
+<!--                    </a>-->
+<!--                    <a href="viber://chat?number=380679153889" class="messenger-link">-->
+<!--                        <img src="img/messenger/viber_logo.png" alt="Viber" class="messenger-image"/>-->
+<!--                    </a>-->
+<!--                </p>-->
+
+<!--   todo             Mein Deutsch Handy-->
+                <p>
+                    <span class="contact-type">mob:</span>
+                    <a href="tel:+491754015229" class="contact-link">+491754015229</a>
+                    <a href="whatsapp://send?phone=491754015229" class="messenger-link">
+                        <img src="img/messenger/whatsapp_logo.png" alt="WhatsApp" class="messenger-image"/>
+                    </a>
+                </p>
+
+                <p>
+                    <span class="contact-type">mail:</span>
+                    <a href="mailto:d.shubchynskyi@gmail.com" class="contact-link">d.shubchynskyi@gmail.com</a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/shubchynskyi/" target="_blank" class="social-link">
+                        <img src="img/social/linkedIn_logo.png" alt="LinkedIn-Logo" class="linkedin-image"/>
+                    </a>
+                    <a href="https://github.com/Shubchynskyi" target="_blank" class="social-link">
+                        <img src="img/social/github_logo.png" alt="Github-Logo" class="github-image"/>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!--Tech skills-->
+        <div class="tech-skills">
+            <h3 class="sidebar-title">Technische Kenntnisse</h3>
+            <ul class="tech-skills-list">
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Java Core</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Spring (Boot, MVC, JPA)</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Servlets, JSP, JSTL, Thymeleaf</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">REST API</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Stream API</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Reflection API</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Multithreading</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">MySQL, PostgreSQL</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">JDBC, Hibernate</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Maven</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Log4j</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">JUnit, Mockito, Selenium</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Docker, Docker Compose</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">Jenkins CI/CD</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">IntelliJ IDEA</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">GIT</span>
+                </li>
+                <li class="tech-skills-item">
+                    <span class="tech-skills-text">HTML, CSS</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--Soft skills-->
+        <div class="soft-skills">
+            <h3 class="sidebar-title">Soziale Kompetenzen</h3>
+            <ul class="soft-skills-list">
+                <li class="soft-skills-item">
+                    <span class="soft-skills-text">Aufmerksamkeit fürs Detail</span>
+                </li>
+                <li class="soft-skills-item">
+                    <span class="soft-skills-text">Qualitätsorientierung</span>
+                </li>
+                <li class="soft-skills-item">
+                    <span class="soft-skills-text">Anpassungsfähigkeit</span>
+                </li>
+                <li class="soft-skills-item">
+                    <span class="soft-skills-text">Teamfähigkeit</span>
+                </li>
+                <li class="soft-skills-item">
+                    <span class="soft-skills-text">Zeitmanagement</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--Languages-->
+        <div class="languages">
+            <h3 class="sidebar-title">Sprachen</h3>
+            <ul class="languages-list">
+                <li class="languages-item">
+                    <span class="languages-text">Deutsch - B1</span>
+                </li>
+                <li class="languages-item">
+                    <span class="languages-text">Englisch - B1+</span>
+                </li>
+                <li class="languages-item">
+                    <span class="languages-text">Ukrainisch - Muttersprache</span>
+                </li>
+                <li class="languages-item">
+                    <span class="languages-text">Russisch - Muttersprache</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--Certificates-->
+        <div class="certificates">
+            <h3 class="sidebar-title">Zertifikate</h3>
+            <div class="certificate-thumbnails">
+
+                <h4 class="certificate-thumbnails-h4">Berufliche Weiterbildung</h4>
+
+                <div class="certificate-pair">
+                    <a href="https://certificate.javarush.com/Shubchynskyi_Dmytro.pdf"
+                       target="_blank">
+                        <img src="img/certificates/JavaRush-cert.png" alt="JavaRush certificate"
+                             class="certificate-thumbnail"/>
+                    </a>
+                    <a href="https://certificates.epam.com/certificates/d014336f-4606-454d-be21-893b391de045"
+                       target="_blank">
+                        <img src="img/certificates/EPAM - Introduction to Java.png" alt="EPAM certificate"
+                             class="certificate-thumbnail"/>
+                    </a>
+                    <a href="https://certificates.epam.com/certificates/2c41ccbf-134b-4dcc-ad5d-6602167a8c9a"
+                       target="_blank">
+                        <img src="img/certificates/EPAM Certificate - AWS.png" alt="EPAM AWS Certificate"
+                             class="certificate-thumbnail"/>
+                    </a>
+                </div>
+
+                <h4 class="certificate-thumbnails-h4">Sprachkompetenz</h4>
+
+                <div class="certificate-pair">
+                    <a href="https://www.efset.org/cert/pr1S9V" target="_blank">
+                        <img src="img/certificates/EF-SET-English-B2.png" alt="English B2 certificate"
+                             class="certificate-thumbnail"/>
+                    </a>
+                    <a href="img/certificates/Deutsch B1.jpg" target="_blank">
+                        <img src="img/certificates/Deutsch B1.jpg" alt="German B1 certificate"
+                             class="certificate-thumbnail"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

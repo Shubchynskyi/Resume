@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get all elements with class 'modal'
     const modals = document.getElementsByClassName('modal');
@@ -54,3 +55,18 @@ document.querySelectorAll('.collapsible').forEach(function (button) {
         }
     });
 });
+
+(function() {
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang && userLang.toLowerCase().startsWith("de") && !window.location.pathname.endsWith("de.html")) {
+        window.location.href = 'de.html';
+    }
+})();
+
+function changeLanguage(lang) {
+    if (lang === 'en') {
+        window.location.href = 'index-en.html';
+    } else if (lang === 'de') {
+        window.location.href = 'index-de.html';
+    }
+}
