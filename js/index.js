@@ -1,20 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
     const preferredLanguage = localStorage.getItem('preferredLanguage');
+    const currentPath = window.location.pathname;
+
+    const isIndexHtml = currentPath.endsWith('index.html') || currentPath === '/' || currentPath === '/index.html';
+    const isIndexDeHtml = currentPath.endsWith('index-de.html');
+
+    const userLang = navigator.language || navigator.userLanguage;
+    const browserLanguage = userLang.toLowerCase().startsWith("de") ? 'de' : 'en';
 
     if (preferredLanguage) {
-        if (preferredLanguage === 'de' && !window.location.pathname.endsWith('index-de.html')) {
+        if (preferredLanguage === 'de' && !isIndexDeHtml) {
             window.location.href = 'index-de.html';
-        } else if (preferredLanguage === 'en' && !window.location.pathname.endsWith('index.html')) {
+            return;
+        } else if (preferredLanguage === 'en' && !isIndexHtml) {
             window.location.href = 'index.html';
+            return;
         }
     } else {
-        const userLang = navigator.language || navigator.userLanguage;
-        console.log('Detected browser language:', userLang);
-
-        if (userLang && userLang.toLowerCase().startsWith("de") && !window.location.pathname.endsWith("index-de.html")) {
+        if (browserLanguage === 'de' && !isIndexDeHtml) {
             window.location.href = 'index-de.html';
-        } else if (!window.location.pathname.endsWith("index.html")) {
+            return;
+        } else if (browserLanguage === 'en' && !isIndexHtml) {
             window.location.href = 'index.html';
+            return;
         }
     }
 
@@ -71,7 +79,6 @@ document.querySelectorAll('.collapsible').forEach(function (button) {
         }
     });
 });
-
 
 function changeLanguage(lang) {
     if (lang === 'en') {
